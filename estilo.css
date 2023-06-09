@@ -1,0 +1,94 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #f2f2ff;
+    color: black
+}
+
+#one {
+    color: black;
+    background-color: #007BFF;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+#cuadro {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+}
+
+#two {
+    margin: 10px 20px 10px 5px;
+    justify-content: left;
+    padding: 15px;
+    margin: 5px;
+    font-size: larger;
+}
+
+.titulos {
+    background-color: #007bff;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 5px;
+    color:black;
+}
+
+.list {
+    text-align: justify;
+    padding-left: 50px;
+    margin-bottom: 15px;
+}
+
+.item {
+    padding: 5px;
+    margin: 10px;
+    text-decoration: underline;
+}
+
+.three {
+    margin: 5px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    text-align: justify;
+}
+
+#work{
+    padding:10px;
+    margin: 10px;
+}
+
+ol {
+    padding: 5px;
+    margin: 10px;
+    text-align: left;
+}
+
+#text {
+    text-align: justify;
+    justify-content: center;
+    font-size: medium;
+    margin: 5px;
+    padding: 20px 100px 50px 100px;
+}
+
+footer{
+    padding: 10px;
+    justify-content: center;
+    font-size: larger;
+    text-align: center;
+    background-color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.four{
+    padding: 10px;
+}
+
+a:hover {
+    cursor: pointer;
+    background-color: blue;
+}
