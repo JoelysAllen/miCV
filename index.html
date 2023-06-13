@@ -1,17 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--metadatos-->
     <meta charset="UTF-8">
     <meta name="author" content="Joelys Reinales, joelysallen@gmail.com">
-    <meta name="revised" content="Sunday, May 28th, 2023, 10:00am">
     <meta name="reply-to" content="joelysallen@gmail.com">
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
     <link rel="stylesheet" href="estilo.css">
-    <tittle>Hoja de Vida: Joelys Reinales</tittle>
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--TITULO-->
+    <tittle>Joelys Reinales | Junior Desarrollador Fronted </tittle>
+    <!--FAVICON
+    <link rel="icon" type="image/x-icon" href="img/icon.png.png"-->
+    <!--ICONS FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Rubik+Dirt&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="one">
+    <nav class="navbar navbar-expand-md navbar-light navbar-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-toggler">
+            <a class="navbar-brand" href="#"><img src="img/icon.png.png" width="50" alt="Logo"></a>
+            <ul class="navbar-nav d-flex justify-content-center align-items-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Acerca de mí</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Mis Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contacto</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+    <!--Section principal-->
+    <section class="hero align-items-stretch">
+        <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+            <img class="hero-imagen" src="img/JERA.png" alt="foto de perfil Joelys Reinales" width="180px" height="180px">
+            <h1>JOELYS ELIANNA REINALES ALLEN</h1>
+            <h2>Desarrollador Junior Frontend</h2>
+        </div>
+        <div class="hero-inferior"> <!--cambiar el enlace por imagen o revisar si está correcto el enlace-->
+            <img class="hero-inferior-imagen img-fluid" src="img/laptop-33521_1280.png" alt="imagen de una laptop">
+        </div>
+    </section>
+    <section class="sobre-mi dark-section"> <!--SOBRE MI-->
+        <div class="contenedor">
+            <h2 class="titulo-section">Sobre Mí</h2>
+            <p class="text-section">Como profesional, me considero una persona paciente, proactiva y organizada, con habilidades avanzadas en gramática y una
+                excelente capacidad de expresión. A lo largo de mi trayectoria, he adquirido habilidades técnicas y tecnológicas mediante
+                cursos autodidactas en HTML, JavaScript, CSS y Python. Además, poseo conocimientos en CRM, marketing y tengo una base sólida en diseño básico.
+                Mi pasión por el aprendizaje continuo y mi capacidad para adquirir nuevos conocimientos de forma rápida me han permitido
+                mantenerme actualizada en las últimas tendencias tecnológicas y herramientas. Tengo un buen manejo de la tecnología y de
+                aplicaciones web y móviles que me facilitan tanto mi vida personal como profesional.
+                Me considero una persona orientada a resultados y cuento con habilidades de liderazgo para trabajar de manera efectiva bajo
+                objetivos claros. Mi experiencia me ha brindado la capacidad de trabajar en entornos exigentes y bajo presión, demostrando
+                una gran adaptabilidad y resiliencia.
+                Estoy convencida de que mi combinación de habilidades técnicas, capacidad de aprendizaje rápido, liderazgo y mi enfoque
+                orientado a resultados serían valiosos en cualquier empresa y área en la que me dedique. Estoy emocionada por la oportunidad de contribuir al
+                éxito de su equipo y poder aplicar mis conocimientos y habilidades en un entorno dinámico y desafiante.
+                Agradezco sinceramente su tiempo y consideración.</p>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--<div id="one">
         <h1>JOELYS ELIANNA REINALES ALLEN</h1>
         <h2 id="principal">Programador Junior</h2>
     </div>
@@ -26,7 +107,7 @@
             </p>
         </div>
         <aside>
-            <img src="img/instasize_191222145546.png" alt="foto de perfil" width="180px" height="180px"/>
+            <img src="img/instasize_191222145546.png" />
         </aside>
     </div>
     <main>
@@ -43,6 +124,8 @@
                 <li>Asistente Virtual</li>
                 <li>Inglés intermedio</li>
                 <li>Microsoft Office</li>
+                <li>Bootstrap</li>
+                <li>Git and GitHub</li>
         </ul>
         </div>
         <div>
@@ -129,27 +212,16 @@
     </section>
     <section>
         <h2 class="titulos">Perfil Laboral</h2>
-        <p id="text">Como profesional, me considero una persona paciente, proactiva y organizada, con habilidades avanzadas en gramática y una
-            excelente capacidad de expresión. A lo largo de mi trayectoria, he adquirido habilidades técnicas y tecnológicas mediante
-            cursos autodidactas en HTML, JavaScript, CSS y Python. Además, poseo conocimientos en CRM, marketing y tengo una base sólida en diseño básico.
-            Mi pasión por el aprendizaje continuo y mi capacidad para adquirir nuevos conocimientos de forma rápida me han permitido
-            mantenerme actualizada en las últimas tendencias tecnológicas y herramientas. Tengo un buen manejo de la tecnología y de
-            aplicaciones web y móviles que me facilitan tanto mi vida personal como profesional.
-            Me considero una persona orientada a resultados y cuento con habilidades de liderazgo para trabajar de manera efectiva bajo
-            objetivos claros. Mi experiencia me ha brindado la capacidad de trabajar en entornos exigentes y bajo presión, demostrando
-            una gran adaptabilidad y resiliencia.
-            Estoy convencida de que mi combinación de habilidades técnicas, capacidad de aprendizaje rápido, liderazgo y mi enfoque
-            orientado a resultados serían valiosos en cualquier empresa y área en la que me dedique. Estoy emocionada por la oportunidad de contribuir al
-            éxito de su equipo y poder aplicar mis conocimientos y habilidades en un entorno dinámico y desafiante.
-            Agradezco sinceramente su tiempo y consideración. </p>
-    </section>
+        <p id="text"> </p>
+    </section>-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 <footer>
-    <div class="four">
+    <!--<div class="four">
         <img src="img/arrow-988169_640.png" alt="flecha de señalamiento" width="25px" height="25px"/>
     </div>
     <div class="four">
         <a href="">Mis Proyectos</a>
-    </div>
+    </div>-->
 </footer>
 </html>
