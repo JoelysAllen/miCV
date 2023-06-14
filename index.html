@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="estilo.css">
     <!--BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!--TITULO-->
     <tittle>Joelys Reinales | Junior Desarrollador Fronted </tittle>
     <!--FAVICON
@@ -23,22 +24,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Rubik+Dirt&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!--BARRA DE NAVEGACION-->
     <nav class="navbar navbar-expand-md navbar-light navbar-light">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbar-toggler">
-            <a class="navbar-brand" href="#"><img src="img/icon.png.png" width="50" alt="Logo"></a>
+            <a class="navbar-brand" href=""><img src="img/icon.png.png" width="50" alt="Logo"></a>
             <ul class="navbar-nav d-flex justify-content-center align-items-center">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Acerca de mí</a>
+                <a class="nav-link active" aria-current="page" href="#primera">Acerca de mí</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Mis Proyectos</a>
+                <a class="nav-link active" aria-current="page" href="#segundo">Formación</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contacto</a>
+                <a class="nav-link active" aria-current="page" href="#tercero">Conocimientos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#cuarto">Mis Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#quinto" tabindex="-1" aria-disabled="true">Contacto</a>
               </li>
             </ul>
             <form class="d-flex">
@@ -48,180 +56,189 @@
           </div>
         </div>
     </nav>
-    <!--Section principal-->
+
+    <!--PRINCIPAL SECTION: FOTO Y NOMBRE-->
     <section class="hero align-items-stretch">
         <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
-            <img class="hero-imagen" src="img/JERA.png" alt="foto de perfil Joelys Reinales" width="180px" height="180px">
+            <img class="hero-imagen" src="img/JERA.png" alt="foto de perfil Joelys Reinales" width="200px" height="200px">
             <h1>JOELYS ELIANNA REINALES ALLEN</h1>
-            <h2>Desarrollador Junior Frontend</h2>
+            <h2>Junior Frontend Developer</h2>
         </div>
-        <div class="hero-inferior"> <!--cambiar el enlace por imagen o revisar si está correcto el enlace-->
-            <img class="hero-inferior-imagen img-fluid" src="img/laptop-33521_1280.png" alt="imagen de una laptop">
-        </div>
-    </section>
-    <section class="sobre-mi dark-section"> <!--SOBRE MI-->
+
+    <!--APTITUDES Y HABILIDADES-->
+    <section class="habilidades">
         <div class="contenedor">
-            <h2 class="titulo-section">Sobre Mí</h2>
+            <div class="hero-inferior">
+                <i class="bi bi-person-lines-fill"></i>
+            </div>
+            <div>
+                <h2 class="titulos">Aptitudes y Habilidades</h2>
+            </div>
+            <div class="lista">
+                <ul class="list-group">
+                    <li class="list-group-item">Excelentes habilidades de comunicación escrita y verbal</li>
+                    <li class="list-group-item">Habilidades digitales y programas informáticos</li>
+                    <li class="list-group-item">Experta en brindar atención al cliente</li>
+                    <li class="list-group-item">Manejo de G-Suite</li>
+                    <li class="list-group-item">Organizada y planificada</li>
+                    <li class="list-group-item">Muy buena capacidad de trabajo en equipo y liderazgo</li>
+                    <li class="list-group-item">Proactiva y de rápido aprendizaje</li>
+                    <li class="list-group-item">Creatividad</li>
+                    <li class="list-group-item">Enfocada a resultados</li>
+                </ul>
+            </div>
+        </div>   
+    </section>
+
+    <!--ACERCA DE MI-->
+
+    <section id="primera" class="sobre-mi dark-section">
+        <div class="contenedor">
+            <h2 class="titulos">Acerca de Mí</h2>
             <p class="text-section">Como profesional, me considero una persona paciente, proactiva y organizada, con habilidades avanzadas en gramática y una
                 excelente capacidad de expresión. A lo largo de mi trayectoria, he adquirido habilidades técnicas y tecnológicas mediante
-                cursos autodidactas en HTML, JavaScript, CSS y Python. Además, poseo conocimientos en CRM, marketing y tengo una base sólida en diseño básico.
+                cursos autodidactas en HTML, JavaScript, CSS y Python. Además, poseo conocimientos básicos en CRM, marketing y tengo una base sólida en diseño básico.<br>
                 Mi pasión por el aprendizaje continuo y mi capacidad para adquirir nuevos conocimientos de forma rápida me han permitido
                 mantenerme actualizada en las últimas tendencias tecnológicas y herramientas. Tengo un buen manejo de la tecnología y de
-                aplicaciones web y móviles que me facilitan tanto mi vida personal como profesional.
+                aplicaciones web y móviles que me facilitan tanto mi vida personal como profesional.<br>
                 Me considero una persona orientada a resultados y cuento con habilidades de liderazgo para trabajar de manera efectiva bajo
                 objetivos claros. Mi experiencia me ha brindado la capacidad de trabajar en entornos exigentes y bajo presión, demostrando
                 una gran adaptabilidad y resiliencia.
                 Estoy convencida de que mi combinación de habilidades técnicas, capacidad de aprendizaje rápido, liderazgo y mi enfoque
                 orientado a resultados serían valiosos en cualquier empresa y área en la que me dedique. Estoy emocionada por la oportunidad de contribuir al
                 éxito de su equipo y poder aplicar mis conocimientos y habilidades en un entorno dinámico y desafiante.
-                Agradezco sinceramente su tiempo y consideración.</p>
-        </div>
-    </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!--<div id="one">
-        <h1>JOELYS ELIANNA REINALES ALLEN</h1>
-        <h2 id="principal">Programador Junior</h2>
-    </div>
-    <div id="cuadro">
-        <div id="two">
-            <p>
-                Armenia, Colombia <br>
-                Teléfono de contacto: (+57)3142186121 <br>
-                Whatsapp: (+58)4148384061 <br>
-                Email: <a href="joelysallen@gmail.com">joelysallen@gmail.com</a> <br>
-                Fecha de nacimiento: 11/10/1989
+                Agradezco sinceramente su tiempo y consideración.<br>
+                Además, poseo conocimientos intermedios de inglés, habilidades matemáticas y me encuentro constantemente actualizando mis conocimientos y aprendiendo diariamente. Creo firmemente en la importancia de mantenerme al tanto de las últimas tendencias y tecnologías, lo cual me permite adaptarme rápidamente a las necesidades cambiantes del mercado.
+                Me gustaría destacar mi compromiso con la excelencia y mi capacidad para trabajar de manera colaborativa en un equipo. Estoy segura de que mi actitud positiva, habilidades de comunicación y disposición para asumir nuevos desafíos serán una contribución valiosa para cualquier empresa.
             </p>
         </div>
-        <aside>
-            <img src="img/instasize_191222145546.png" />
-        </aside>
-    </div>
-    <main>
-        <div>
-            <h2 class="titulos">Conocimientos</h2>
-            <ul class="list">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Javascript</li>
-                <li>SQl</li>
-                <li>Python</li>
-                <li>Wordpress</li>
-                <li>CRM</li>
-                <li>Asistente Virtual</li>
-                <li>Inglés intermedio</li>
-                <li>Microsoft Office</li>
-                <li>Bootstrap</li>
-                <li>Git and GitHub</li>
-        </ul>
-        </div>
-        <div>
-            <h2 class="titulos">Aptitudes y Habilidades</h2>
-            <ul class="list">
-                <li>Excelentes habilidades de comunicación escrita y verbal</li>
-                <li>Experta en brindar atención al cliente</li>
-                <li>Manejo de G-Suite</li>
-                <li>Habilidades digitales y programas informáticos</li>
-                <li>Organizada y planificada</li>
-                <li>Muy buena capacidad de trabajo en equipo y liderazgo</li>
-                <li>Creatividad</li>
-                <li>Proactiva y de rápido aprendizaje</li>
-                <li>Enfocada a resultados</li>
-            </ul>
-        </div>
-        <div>
-            <h2 class="titulos">Formación y Cursos Realizados</h2>
-            <ul>
-                <li>
-                    <h3 class="item"><b>Instituto de Formación Universitaria Henri Pittier</b></h3>
-                    <p class="three"><b>Lechería, Venezuela.</b><em>T.S.U.en Relaciones Industriales</em><br>
-                    Octubre de 2013 - Julio de 2016</p>
-                </li>
-                <li>
-                    <h3 class="item"><b>Google Actívate, Google</b></h3>
-                    <p class="three"><em>Curso de Fundamentos de Marketing Digital</em><br>
-                    Enero de 2022- Febrero de 2022</p>
-                </li>
-                <li>
-                    <h3 class="item"><b>Instituto de Comunicación Web, UNEWEB</b></h3>
-                    <p class="three"><b>Caracas, Venezuela.</b><em>Curso de Lógica de Programación y HTML5</em><br>
-                    Octubre de 2022 - Diciembre de 2022</p>
-                </li>
-                <li>
-                    <h3 class="item"><b>EGG Cooperation</b></h3>
-                    <p class="three"><b>Argentina.</b><em>Curso de Lógica de Programación: Programación desde Cero</em><br> Enero de 2023 - Marzo de 2023</p>
-                </li>
-                <li>
-                    <h3 class="item"><b>Politécnico de Colombia</b></h3>
-                    <p class="three"><b>Medellín, Colombia</b><em>CRM</em><br>
-                    Mayo de 2023 - Junio de 2023</p>
-                </li>
-            </ul>
-        </div>
-    </main>
-    <section id="work">
-        <h2 class="titulos">Experiencia Laboral</h2>
-            <ul>
-                <li>
-                    <h3 class="item"><b>Granja Los Porcinos:</b> Asistente</h3>
-                    <p><b>Barcelona, Venezuela.</b> Mayo de 2021 - Octubre de 2022<br>
-                        <ol>
-                            <li>Comprar y vender animales, alimentos e insumos</li>
-                            <li>Administrar gastos y presupuesto de la granja</li>
-                            <li>Manejar las RRSS</li>
-                            <li>Pagar impuestos y mantener al día la permisología </li>
-                        </ol>
-                    </p>
-                </li>
-                <li>
-                    <h3 class="item"><b>International Parts de México S.A. de C.V.:</b> Cotizadora</h3>
-                    <p><b>México, remoto</b> Enero de 2020 - Agosto de 2020<br>
-                        <ol>
-                            <li>Atender solicitudes y cotizar diferentes productos a nivel nacional e internacional</li>
-                            <li>Verificar con los proveedores e E-commerces que el producto cumpliera con los requisitos para el envío (cantidad mínima, características, incoterms, ect)</li>
-                        </ol>
-                    </p>
-                </li>
-                <li>
-                    <h3 class="item"><b>Construcciones y Remodelaciones LD</b> Asistente</h3>
-                    <p><b>Lechería, Venezuela.</b> Marzo de 2015 - Julio de 2018<br>
-                        <ol>
-                            <li>Gestionar correo electrónico y agenda</li>
-                            <li>Realizar cotizaciones y compras, manejo de inventario y presupuesto</li>
-                            <li>Pagar a proveedores</li>
-                            <li>Realizar gestiones bancarias</li>
-                            <li>Entrada de datos y mantenimiento de registros de personal</li>
-                            <li>Edición y formato de documentos</li>
-                        </ol>
-                    </p>
-                </li>
-            </ul>
     </section>
-    <section>
-        <h2 class="titulos">Perfil Laboral</h2>
-        <p id="text"> </p>
-    </section>-->
+
+    <!--CURSOS Y FORMACION-->
+
+    <section id="segundo" class="formacion">
+        <h2 class="titulos">Mi Formación</h2>
+        <div class="container-fluid text-center">
+            <div class="row columnas">
+                <div class="columna col-12 col-md-4">
+                    <i class="bi bi-mortarboard-fill"></i>
+                    <p class="tittle">T.S.U. en Relaciones Industriales</p>
+                    <p>Instituto de Formación Universitaria Henri Pittier. </p>
+                    <p>Lechería, Venezuela. Octubre de 2013 - Julio de 2016 </p>
+                </div>
+                <div class="columna col-12 col-md-4">
+                    <i class="bi bi-mortarboard-fill"></i>
+                    <p class="tittle">Google Actívate, Google</p>
+                    <p>Curso de Fundamentos de Marketing Digital</p>
+                    <p>Enero de 2022- Febrero de 2022</p>
+                </div>
+            </div>
+            <div class="row columnas">
+                <div class="columna col-12 col-md-4">
+                    <i class="bi bi-mortarboard-fill"></i>
+                    <p class="tittle">Curso de Lógica de Programación y HTML5</p>
+                    <p>Instituto de Comunicación Web, UNEWEB</p>
+                    <p>Caracas, Venezuela. Octubre de 2022 - Diciembre de 2022</p>
+                </div>
+                <div class="columna col-12 col-md-4">
+                    <i class="bi bi-mortarboard-fill"></i>
+                    <p class="tittle">Curso de Lógica de Programación: Programación desde Cero</p>
+                    <p>EGG Cooperation</p>
+                    <p>Argentina. Enero de 2023 - Marzo de 2023</p>
+                </div>
+            </div>
+            <div class="row columnas">
+                <div class="ultima columna col-12 col-md-4">
+                    <i class="bi bi-mortarboard-fill"></i>
+                    <p class="tittle">Fundamentos de CRM</p>
+                    <p>Instituto Politécnico de Colombia</p>
+                    <p>Medellín, Colombia. Mayo de 2023 - Junio de 2023</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--MIS CONOCIMIENTOS-->
+
+    <h2 id="tercero" class="titulos">Mis Conocimientos</h2>
+    <div id="carousel" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <i class="bi bi-filetype-html"></i>
+          </div>
+          <div class="carousel-item">
+            <i class="bi bi-filetype-css"></i>
+          </div>
+          <div class="carousel-item">
+            <i class="bi bi-filetype-js"></i>
+          </div>
+          <div class="carousel-item">
+            <i class="bi bi-bootstrap"></i>
+          </div>
+          <div class="carousel-item">
+            <i class="bi bi-filetype-sql"></i>
+          </div>
+          <div class="carousel-item">
+            <i class="bi bi-filetype-py"></i>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden"><i class="bi bi-arrow-left-square"></i></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden"><i class="bi bi-arrow-right-square"></i></span>
+        </button>
+      </div>
+
+
+    <!--MIS PROYECTOS-->
+    <section id="cuarto" class="experiencia">
+        <h2 class="titulos">Mis Proyectos</h2>
+        <div class="container text-center">
+            <div class="row">
+                <div class=" columna col-12 col-md-4">
+                    <i class="bi bi-book"></i>
+                    <p class="tittle">Desarrollo Web</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, modi.</p>
+                    <button type="button" class="btn btn-info">Info</button>
+                </div>
+                <div class="columna col-12 col-md-4">
+                    <i class="bi bi-book"></i>
+                    <p class="tittle">Desarrollo Web</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, modi.</p>
+                    <button type="button" class="btn btn-info">Info</button>
+                </div>
+                <div class="columna col-12 col-md-4">
+                    <i class="bi bi-book"></i>
+                    <p class="tittle">Desarrollo Web</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, modi.</p>
+                    <button type="button" class="btn btn-info">Info</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--CONTACTO-->
+    <section id="quinto" class="contacto">
+        <footer class="footer d-flex flex-column align-items-center justify-content-center">
+            <i class="footer-logo bi bi-person-lines-fill"></i>
+            <p class="footer-texto">Aprendo y creo todos los días<br>Creemos un proyecto juntos</p>
+            <div class="iconos-rrss d-flex flex-wrap align-items-center justify-content-center">
+                <a href="#" target="_blank" rel="noopener no-referrer">
+                    <i class="bi bi-github">GitHub</i>
+                </a>
+                <a href="mailto:joelysallen@gmail.com" target="_blank" rel="noopener no-referrer">
+                    <i class="bi bi-envelope-at"></i>
+                </a>
+            </div>
+            <div class="copywriter">Creado por Joelys Reinales (2023) &#169;</div>
+        </footer>
+    </section>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
-<footer>
-    <!--<div class="four">
-        <img src="img/arrow-988169_640.png" alt="flecha de señalamiento" width="25px" height="25px"/>
-    </div>
-    <div class="four">
-        <a href="">Mis Proyectos</a>
-    </div>-->
-</footer>
+
+
 </html>

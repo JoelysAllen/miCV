@@ -1,7 +1,7 @@
 /*Barra de navegación*/
 .navbar{
     padding: 2rem;
-    background-color: azure;
+    background-color: greenyellow;
 }
 
 .navbar-collapse{
@@ -9,44 +9,27 @@
     justify-content: space-between;
 }
 
-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-h1{
-    font-size: 2.5rem;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-family: 'Rubik Dirt', cursive;
-}
-
-.dark-section {
-    color: black;
-    background-color: aquamarine;
+.nav-item{
+    color: white;
     font-size: large;
+    font-weight: bold;
 }
 
-/*section principal*/
-.hero{
-    background-color: azure;
-    min-height: 450px;
-    text-align: center;
-}
+/*PRINCIPAL SECTION: FOTO Y NOMBRE*/
 
-.sobre-mi {
-    height: 800px;
-    padding: 10px;
-}
-
-.sobre-mi .contenedor {
-    max-width: 600px;
-    text-align: justify;
+.hero-principal h2{
+    font-size: 1.5rem;
+    color: #333333;
 }
 
 .hero-principal{
     padding: 3rem;
+}
+
+.hero{
+    background-color: gray;
+    min-height: 450px;
+    text-align: center;
 }
 
 .hero-imagen {
@@ -56,21 +39,200 @@ h1{
     margin: 20px;
 }
 
-.hero-principal h2{
+h1{
+    font-size: 2.5rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Rubik Dirt', cursive;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+
+/*APTITUDES Y HABILIDADES*/
+
+.hero-inferior i{
+    font-size: 2.5rem;
+    color:greenyellow;
+    padding: 8px 15px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.titulos {
+    font-weight: bold;
+    text-decoration: underline;
+    margin: 25px;
+    text-align: center;
+    color:greenyellow;
+}
+
+/*ACERCA DE MI*/
+
+.sobre-mi {
+    padding: 25px;
+    margin: 25px;
+}
+
+.sobre-mi .contenedor {
+    max-width: 800px;
+    text-align: justify;
+
+}
+
+.dark-section {
+    color: black;
+    background-color: gray ;
+    font-size: large;
+}
+
+/*FORMACION Y CURSOS REALIZADOS*/
+
+.formacion i {
+    font-size: 2.5rem;
+    color:gray;
+    padding: 8px 15px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.columnas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*MIS CONOCIMIENTOS*/
+
+.carousel {
+    padding: 15px;
+    margin: 25px;
+    background-color: black;
+}
+
+.carousel-item i {
+    font-size: 5rem;
+    color:gray;
+    padding: 8px 15px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+
+/*MIS PROYECTOS*/
+
+.experiencia{
+    padding:40px 40px 60px 40px;
+    background-color: #E8F0FF;
+}
+
+.experiencia i {
+    font-size: 2.5rem;
+    color:#b0c7ff;
+    padding: 8px 15px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.experiencia .columna {
+    padding:20px;
+    border: 4px solid greenyellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;
+}
+
+.experiencia .columna:hover {
+    color: white;
+    background-color: black;
+}
+
+.tittle{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+    }
+
+/*FOOTER*/
+
+footer{
+    min-height: 500px;
+    /*background-color: #E8F0FF;*/
+    justify-content: space-between;
+}
+.footer-logo {
+    height: 50px;
+    width: 80px;
+    margin: 10px;
+    font-size: 50px;
+    color:greenyellow;
+    border: solid 3px greenyellow;
+}
+
+.footer-texto{
     font-size: 1.5rem;
-    color: #615151;
+    padding: 20px;
+    margin-bottom: 30px;
 }
 
-.hero-inferior-imagen {
-    width: 150px;
-    height: 150px;
-    margin: 20px;
+.iconos-rrss a{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border: 2px solid gray;
+    margin: 15px;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
 }
 
-/*Media Query Responsive*/
+.iconos-rrss i{
+    color: black;
+    font-size: 2rem;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-rrss a:hover{
+    background-color: black;
+    border: 2px solid greenyellow;
+}
+
+.iconos-rrss a:hover i{
+    color:greenyellow
+}
+
+.copywriter{
+    font-size: 15px;
+    color: black;
+    padding: 15px;
+}
+
+
+/*MEDIA QUERY RESPONSIVE*/
+
 @media screen and (max-width: 767px) {
     .navbar-brand {
         display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .dark-section {
+        display: none;
+        font-size: small;
     }
 }
 
@@ -79,100 +241,3 @@ h1{
         max-width: 600px;
     }
 }
-
-
-
-/* {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: #f2f2ff;
-    color: black
-}
-
-#one {
-    color: black;
-    background-color: #007BFF;
-    text-align: center;
-    padding: 5px;
-    margin-bottom: 15px;
-}
-
-#cuadro {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    text-align: center;
-}
-
-#two {
-    margin: 10px 20px 10px 5px;
-    justify-content: left;
-    padding: 15px;
-    margin: 5px;
-    font-size: larger;
-}
-
-.titulos {
-    background-color: #007bff;
-    text-align: center;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    padding: 5px;
-    color:black;
-}
-
-.list {
-    text-align: justify;
-    padding-left: 50px;
-    margin-bottom: 15px;
-}
-
-.item {
-    padding: 5px;
-    margin: 10px;
-    text-decoration: underline;
-}
-
-.three {
-    margin: 5px;
-    padding-bottom: 10px;
-    padding-top: 5px;
-    text-align: justify;
-}
-
-#work{
-    padding:10px;
-    margin: 10px;
-}
-
-ol {
-    padding: 5px;
-    margin: 10px;
-    text-align: left;
-}
-
-#text {
-    text-align: justify;
-    justify-content: center;
-    font-size: medium;
-    margin: 5px;
-    padding: 20px 100px 50px 100px;
-}
-
-footer{
-    padding: 10px;
-    justify-content: center;
-    font-size: larger;
-    text-align: center;
-    background-color: white;
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-.four{
-    padding: 10px;
-}
-
-a:hover {
-    cursor: pointer;
-    background-color: blue;
-}*/
